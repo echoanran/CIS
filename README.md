@@ -29,7 +29,7 @@ First, request for the access of the two AU benchmark datasets:
 * [DISFA](http://mohammadmahoor.com/disfa/)
 
 ### Step 2: Preprocess raw data
-Preprocess the downloaded datasets using [Dlib](http://dlib.net/) (related functions are provided in `$INSTALL_DIR/au_lib/face_ops.py`):
+Preprocess the downloaded datasets using [Dlib](http://dlib.net/)
 * Detect face and facial landmarks
 * Align the cropped faces according to the computed coordinates of eye centers
 * Resize faces to (256, 256)
@@ -48,14 +48,13 @@ $ cd $INSTALL_DIR
 $ python run-cisnet.py
 ```
 
-## Evaluation
-```bash
-$ cd $INSTALL_DIR
-$ python run-cisnet-eval.py
-```
-
 ## Citation
 Please cite our paper if you use the codes:
 ```
-
+@inproceedings{yingjie2022,
+  title={Causal Intervention for Subject-Deconfounded Facial Action Unit Recognition},
+  author={Chen, Yingjie and Chen, Diqi and Wang, Tao and Wang, Yizhou and Liang, Yun},
+  booktitle={AAAI},
+  year={2022}
+}
 ```
